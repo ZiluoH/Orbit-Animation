@@ -1,13 +1,21 @@
+body{
+	background-color: black;
+}
+
+.container{
+	background:url(../img/galaxy.png) no-repeat;
+	height: 800px;
+	width: 1350px;
+}
+
 #earthOrbit{
-	width: 600px;
-	height: 600px;
-	transform: scaleY(0.33);
+	width: 900px;
+	height: 800px;
+	transform: scaleY(0.5);
 	border: solid 3px red;
-	left: 200px;
-	position: absolute;
-	margin-left: 300px;
-	margin-top: 100px;
+	position: relative;
 	border-radius: 50%;
+	margin: -700px auto
 }
 
 #earth{
@@ -18,49 +26,44 @@
 }
 
 #conterearth{
-	width: 70px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
 	animation: cearth 10s infinite linear;
 }
 
 #earthimg{
-	width: 250px;
-	height: 250px;
+	width: 130px;
+	height: 130px;
 	position: absolute;
-	/*top: 50%;*/
+	/*left: -90px;*/
 	/*left: 50%;*/
     /*margin-top: -60px;*/
-	transform: scaleX(0.33);
+	transform: scaleX(0.5);
 }
 
 #moonimg{
 	width: 80px;
 	height: 80px;
 	position: absolute;
-	transform: scaleX(0.33);
+	transform: scaleX(0.5);
 }
 
 
 
-/*body{
-	background: url(../img/galaxy.png);
-	background-color: black;
-}*/
 
-/*#sun{
-	position: absolute;
+
+#sun{
+	position: inherit;
 	background: orange;
-	height: 200px;
-	width: 200px;
-	top: 500px;
-	left: 700px;
-	margin-top: -100px;
-	margin-left: -100px;
+	height: 180px;
+	width: 180px;
+	margin:250px auto;
+
 	border-radius: 100%;
 	background: radial-gradient(#f5c313, #ec7e08);
 	box-shadow: 0 0 50px #f5c91a;
 	animation:sunfire 2s infinite alternate;
-}*/
+}
 
 /*#earth{
 	border:solid 1px red;
@@ -110,14 +113,7 @@
 	animation: spin 10s linear infinite;
 }
 
-@keyframes sunfire{
-	from{
-		box-shadow: 0 0 50px #f5c91a;
-	}
-	to{
-		box-shadow: 0 0 100px #f5c91a;
-	}
-}
+
 
 @keyframes spin{
 	from{
@@ -139,4 +135,13 @@
 @keyframes cearth{
 	from{transform: rotateZ(360deg);}
 	to{transform: rotateZ(0deg);}
+}
+
+@keyframes sunfire{
+	from{
+		box-shadow: 0 0 50px #f5c91a;
+	}
+	to{
+		box-shadow: 0 0 100px #f5c91a;
+	}
 }
